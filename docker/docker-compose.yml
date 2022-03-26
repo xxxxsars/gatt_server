@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  web:
+    build: ./
+    command: service dbus start
+    ports:
+      - 8000:8000
+    volumes:
+      - ./:/gatt_server
